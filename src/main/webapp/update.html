@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Update data</title>
+</head>
+<body>
+	
+	<h2>Update Registration Details</h2>
+	<form method="post" action="Update" >
+			<label for="a">Enter existing name : </label>
+			<input type="text" name="name" id="a" required><br><br>
+			
+			<label for="field">Select field to update:</label>
+			<select name="field" id="field" required>
+    				<option value="">-- Choose a field --</option>
+    				<option value="name" >Name</option>
+    				<option value="password" >Password</option>
+    				<option value="age" >Age</option>
+    				<option value="location">Location</option>
+			</select>
+			
+			<br><br><br>
+			<label for="c">Enter new Value : </label>
+			<input type="text" name="new" id="c" required><br><br>
+			
+			
+			<input type="submit" value="Update Data">
+	</form>
+</body>
+</html>
