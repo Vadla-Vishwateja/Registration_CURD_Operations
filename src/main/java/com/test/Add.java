@@ -52,6 +52,7 @@ public class Add extends GenericServlet {
 		try {
 			
 			Class.forName("com.mysql.cj.jdbc.Driver");
+			
 			Connection conn=DriverManager.getConnection(url, user, pass1);
 			
 			PreparedStatement ps = conn.prepareStatement(query);
