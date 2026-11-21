@@ -64,6 +64,7 @@ public class Add extends GenericServlet {
 			ps.setInt(3, age);
 			ps.setString(4, loc);
 			int a=ps.executeUpdate();
+			
 			out.println("<h1>"+a+" row  inserted </h1>");
 			out.println("<a href='index.html'>Go Back</a>");
 			
