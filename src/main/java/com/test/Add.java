@@ -50,6 +50,7 @@ public class Add extends GenericServlet {
 		String query = "INSERT INTO userdata VALUES (?, ?, ?, ?)";
 		
 		try {
+			
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection conn=DriverManager.getConnection(url, user, pass1);
 			
