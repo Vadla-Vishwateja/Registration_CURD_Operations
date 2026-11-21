@@ -58,6 +58,7 @@ public class Add extends GenericServlet {
 			PreparedStatement ps = conn.prepareStatement(query);
 			
 			ps.setString(1, name);
+			
 			ps.setString(2, pass);
 			ps.setInt(3, age);
 			ps.setString(4, loc);
