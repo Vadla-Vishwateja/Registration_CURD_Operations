@@ -62,6 +62,7 @@ public class Add extends GenericServlet {
 			ps.setString(2, pass);
 			
 			ps.setInt(3, age);
+			
 			ps.setString(4, loc);
 			int a=ps.executeUpdate();
 			
