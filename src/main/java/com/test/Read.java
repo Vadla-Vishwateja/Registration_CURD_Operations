@@ -47,6 +47,7 @@ public class Read extends GenericServlet {
 		String query="select * from userdata where name=?;";
 		
 		try {
+			
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection conn=DriverManager.getConnection(url, user, pass);
 			
