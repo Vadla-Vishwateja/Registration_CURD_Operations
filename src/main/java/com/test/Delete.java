@@ -46,6 +46,7 @@ public class Delete extends GenericServlet {
 		String query="Delete from userdata where name=?";
 		
 		try {
+			
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection conn=DriverManager.getConnection(url, user, pass);
 			
