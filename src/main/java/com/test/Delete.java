@@ -48,6 +48,7 @@ public class Delete extends GenericServlet {
 		try {
 			
 			Class.forName("com.mysql.cj.jdbc.Driver");
+			
 			Connection conn=DriverManager.getConnection(url, user, pass);
 			
 			PreparedStatement st=conn.prepareStatement(query);
