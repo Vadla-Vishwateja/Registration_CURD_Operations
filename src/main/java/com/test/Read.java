@@ -82,8 +82,7 @@ public class Read extends GenericServlet {
 			
 			st.close();
 			rs.close();
-			conn.close();
-		
+			conn.close();	
 		} catch (Exception e) {
 			out.println("<h2>"+e.getMessage()+"</h2>");
 		}
