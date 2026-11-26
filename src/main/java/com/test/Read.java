@@ -77,12 +77,12 @@ public class Read extends GenericServlet {
 
 			out.println("</table><br><br><br><br>");
 			
-			
 			out.println("<a href='index.html'>Go Back</a>");
 			
 			st.close();
 			rs.close();
 			conn.close();	
+			
 		} catch (Exception e) {
 			out.println("<h2>"+e.getMessage()+"</h2>");
 		}
